@@ -1,14 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contoh audio sebagai background</title>
-</head>
-<body>
-  <h1>Contoh audio sebagai background</h1>
-  <audio hidden autoplay loop>
-    <source src="http://docs.google.com/uc?export=open&amp;id=1J26YlaMX7jR-uaV2nb_SZIvmOi61kAp8" type="audio/mpeg">
-    Browsermu tidak mendukung tag audio
-  </audio>
-</body>
-</html>
+<html>
+  
+<script>
+			var settingAutoplay = 'yes';
+			window.settingAutoplay = settingAutoplay === 'disable' ? false : true;
+		</script>
+
+		<div id="audio-container" class="audio-box">			
+
+			<audio id="song" loop>
+				<source src="https://inviwedd.com/wp-content/uploads/2022/07/brian-mcknight-marry-your-daughter-Lyrics-Vidio-animasi-Up-Terjemahan-Indonesia-mp3cut.net-1.mp3"
+                type="audio/mp3">
+			</audio>  
+
+			<div class="elementor-icon-wrapper" id="unmute-sound" style="display: none;">
+				<div class="elementor-icon">
+				<i aria-hidden="true" class="fa fa-play-circle"></i>				</div>
+			</div> 
+
+			<div class="elementor-icon-wrapper" id="mute-sound" style="display: none;">
+				<div class="elementor-icon">
+				<i aria-hidden="true" class="far fa-pause-circle"></i>				</div>
+			</div>
+			
+		</div>
+  
+  </html>
