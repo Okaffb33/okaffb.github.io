@@ -1,10 +1,23 @@
 <html lang="en">
 <body>
-<audio id="song" loop>
+<div id="audio-container" class="audio-box">			
+
+			<audio id="song" loop>
 				<source src="https://www.youtube.com/embed/VRmfUq79rjI?rel=0&autoplay=1&loop"
                 type="audio/mp3">
-			</audio> 
-<iframe width="100" height="300" src="https://www.youtube.com/embed/VRmfUq79rjI?rel=0&autoplay=1&loop" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+			</audio>  
+
+			<div class="elementor-icon-wrapper" id="unmute-sound" style="display: none;">
+				<div class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-play-circle"></i>				</div>
+			</div> 
+
+			<div class="elementor-icon-wrapper" id="mute-sound" style="display: none;">
+				<div class="elementor-icon">
+				<i aria-hidden="true" class="fas fa-pause-circle"></i>				</div>
+			</div>
+			
+		</div>
 <head>
 
   <meta charset="utf-8">
