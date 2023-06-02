@@ -4,7 +4,6 @@
   <title>KANGEN :(</title>
   <style>
     .typing-effect {
-      animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
       white-space: nowrap;
       overflow: hidden;
       border-right: 2px solid;
@@ -22,9 +21,10 @@
   </style>
 </head>
 <body>
+  <h1>Allow To See All Content</h1>
   <h1>Kangen Kamu, Ajeng</h1>
   <p>Hai <strong>Ajeng,</strong></p>
-  <p>Saat ini, hatiku dipenuhi dengan kerinduan yang mendalam padamu. Setiap detik, setiap napas yang kuambil, hanya membuatku semakin kangen padamu.ANjay</p>
+  <p>Saat ini, hatiku dipenuhi dengan kerinduan yang mendalam padamu. Setiap detik, setiap napas yang kuambil, hanya membuatku semakin kangen padamu.</p>
   <p class="typing-effect">Engkau adalah sinar matahari di hari-hariku yang kelam. Pikiranku selalu terbang padamu, dan hatiku tak pernah berhenti menyebut namamu.</p>
   <p class="typing-effect">Setiap saat, setiap momen yang kita habiskan bersama, memberiku kebahagiaan yang tak tergantikan. Senyummu adalah obat bagi hatiku yang terluka, dan cintamu adalah kekuatan yang menggerakkan hidupku.</p>
   <p class="typing-effect">Tak sabar rasanya ingin kembali merasakan hangatnya pelukanmu, mendengar suaramu yang lembut, dan melihat senyuman indah yang menghiasi wajahmu. Jarak dan waktu tak mampu meredam rasa kangen ini.</p>
@@ -38,11 +38,25 @@
   <script>
     // Menghentikan efek mengetik setelah semua teks tampil
     const typingEffects = document.getElementsByClassName('typing-effect');
+    for (let i = 0; i < typingEffects.length; i++) {
+      const effect = typingEffects[i];
+      const words = effect.innerText.split(' ');
+      effect.innerHTML = '';
+
+      for (let j = 0; j < words.length; j++) {
+        const word = words[j];
+        const span = document.createElement('span');
+        span.className = 'typing-effect';
+        span.innerText = word + ' ';
+        effect.appendChild(span);
+      }
+    }
+
     const lastEffect = typingEffects[typingEffects.length - 1];
     lastEffect.addEventListener('animationend', function() {
       lastEffect.style.animation = 'none';
     });
   </script>
-   <h1>Allow To See All Content</h1>
+  <h1>Allow To See All Content</h1>
 </body>
 </html>
