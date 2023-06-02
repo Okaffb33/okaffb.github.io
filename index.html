@@ -1,28 +1,48 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>SAYANGKU</title>
+  <title>KANGEN :(</title>
+  <style>
+    .typing-effect {
+      animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: black; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Ajeng sayang</h1>
+  <h1>Kangen Kamu, Ajeng</h1>
+  <p>Hai <strong>Ajeng,</strong></p>
+  <p>Saat ini, hatiku dipenuhi dengan kerinduan yang mendalam padamu. Setiap detik, setiap napas yang kuambil, hanya membuatku semakin kangen padamu.ANjay</p>
+  <p class="typing-effect">Engkau adalah sinar matahari di hari-hariku yang kelam. Pikiranku selalu terbang padamu, dan hatiku tak pernah berhenti menyebut namamu.</p>
+  <p class="typing-effect">Setiap saat, setiap momen yang kita habiskan bersama, memberiku kebahagiaan yang tak tergantikan. Senyummu adalah obat bagi hatiku yang terluka, dan cintamu adalah kekuatan yang menggerakkan hidupku.</p>
+  <p class="typing-effect">Tak sabar rasanya ingin kembali merasakan hangatnya pelukanmu, mendengar suaramu yang lembut, dan melihat senyuman indah yang menghiasi wajahmu. Jarak dan waktu tak mampu meredam rasa kangen ini.</p>
+  <p class="typing-effect">Aku ingin engkau tahu betapa berartinya dirimu bagiku. Kamu adalah segalanya, dan hidupku tak lengkap tanpamu. Aku merindukanmu, Ajeng.</p>
+  <p class="typing-effect">Teruslah bersamaku, jalani hidup ini dengan cinta yang tulus. Meski jarak memisahkan kita, aku percaya cinta kita akan selalu menghubungkan hati kita. Aku akan selalu menanti saat kita dapat bersatu kembali.</p>
+  <p class="typing-effect">Terima kasih telah hadir dalam hidupku, Ajeng. Aku mencintaimu dengan segenap hatiku, dan rinduku padamu takkan pernah berhenti.</p>
   
-  <p>Sayangku,</p>
-  
-  <blockquote>
-    <p>ayang maafin aku ya, sudah tidak tau lagi ayang aku harus ngapain.</p>
-    
-    <p>kesepian ayang aku sendirian.</p>
-    
-    <p>diputusin berkali kali dan kk sendirian tanpa ngapa-ngapain karna libur ini jadi bikin kk tambah yakin kalau memang bukan kk yang ajeng mau.</p>
-    
-    <p>keadaan kk yang udh ga seperti dulu, bikin kk ga bisa ngapa-ngapain lagi untuk pertahanin ajeng nya ayang.</p>
-    
-    <p>kk yang sekarang ga bisa bikin ajeng bahagia, wajar ajeng nyari kebahagiaan ajeng sendiri, harusnya kk ga ush ikut campur dari awal</p>
-  </blockquote>
-  
-  <p>
-    tapi karna kk sayang takut kehilangan jadinya bodoh, dan ga tau diri. maaf sayang selalu nyusahin kk nya skrg ya, love you ajeng.
-  </p>
+  <p>With all my love,</p>
+  <p><em>oka</em></p>
+
+  <script>
+    // Menghentikan efek mengetik setelah semua teks tampil
+    const typingEffects = document.getElementsByClassName('typing-effect');
+    const lastEffect = typingEffects[typingEffects.length - 1];
+    lastEffect.addEventListener('animationend', function() {
+      lastEffect.style.animation = 'none';
+    });
+  </script>
    <h1>Allow To See All Content</h1>
 </body>
 </html>
